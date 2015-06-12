@@ -3,16 +3,16 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  'text!templates/landingPage.html'
-], function($, _, Backbone, landingPage) {
+  'text!templates/mainPage.html'
+], function($, _, Backbone, mainPage) {
   'use strict';
 
-  // Our overall **LandingPageView** is the top-level piece of UI.
-  var LandingPageView = Backbone.View.extend({
+  // Our overall **MainPageView** is the top-level piece of UI.
+  var MainPageView = Backbone.View.extend({
     // attaches `this.el` to an existing element.
-    el: $('body'),
+    el: $('.landing-page-container'),
     // Compile our stats template
-    template: _.template(landingPage),
+    template: _.template(mainPage),
     // Delegated events for creating new items, and clearing completed ones.
     events: {},
 
@@ -31,6 +31,6 @@ define([
 
   });
 
-  return LandingPageView;
+  return MainPageView;
 
 });

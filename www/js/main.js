@@ -35,15 +35,20 @@ requirejs.config({
     views: '../views',
     model: '../model',
     collections: '../collections',
-    templates: '../templates'
+    templates: '../templates',
+    router: '../router'
   }
 });
 // Start the main app logic.
 requirejs([
   'backbone',
-  'views/landingPage'
-], function(Backbone, LandingPageView) {
+  'router'
+], function(Backbone, AppRouter) {
+  var AppRouter = new AppRouter();
 
-  var LandingPageView = new LandingPageView();
-
+  // Start Backbone history a necessary step for bookmarkable URL's
+  Backbone.history.start({
+    pushState: true,
+    root: ''
+  });
 });
