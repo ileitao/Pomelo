@@ -7,7 +7,7 @@ body {
   letter-spacing: 0px;
 }
 
-.landing-page-container {
+.landing-page-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,12 +19,12 @@ body {
   box-sizing: border-box;
 }
 
-.landing-page-container .landing-page-content {
+.landing-page-content {
   height: auto;
   text-align: center;
 }
 
-.landing-page-container .landing-page-lecture {
+.landing-page-content .landing-page-lecture {
   margin: 0 auto;
   max-width: 880px;
   padding-top: 40px;
@@ -32,11 +32,11 @@ body {
   position: static;
 }
 
-.landing-page-container .landing-page-subtitle {
+.landing-page-content .landing-page-subtitle {
   margin-bottom: 50px;
 }
 
-.landing-page-container h1 {
+.landing-page-content h1 {
   font-family: "Playfair Display";
   font-size: 55px;
   line-height: 1.1em;
@@ -47,7 +47,7 @@ body {
   color: #E08;
 }
 
-.landing-page-container p {
+.landing-page-content p {
   font-family: "Playfair Display";
   font-size: 16px;
   line-height: 1.1em;

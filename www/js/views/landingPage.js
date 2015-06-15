@@ -6,7 +6,7 @@ define([
   'text!templates/landingPage.html'
 ], function($, _, Backbone, landingPage) {
   'use strict';
-
+  debugger;
   // Our overall **LandingPageView** is the top-level piece of UI.
   var LandingPageView = Backbone.View.extend({
     // attaches `this.el` to an existing element.

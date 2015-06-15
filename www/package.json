@@ -1,0 +1,21 @@
+{
+  "name": "pomelo",
+  "version": "1.0.0",
+  "description": "pomelo portfolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ileitao/Pomelo.git"
+  },
+  "author": "Ignacio Leitao",
+  "bugs": {
+    "url": "https://github.com/ileitao/Pomelo/issues"
+  },
+  "homepage": "https://github.com/ileitao/Pomelo#readme",
+  "dependencies": {
+    "express": "^4.12.4"
+  }
+}

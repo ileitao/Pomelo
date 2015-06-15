@@ -6,14 +6,14 @@ define([
   'views/mainPage'
 ], function($, _, Backbone, LandingPageView, MainPageView) {
   'use strict';
-
+  debugger;
   var AppRouter = Backbone.Router.extend({
 
     routes: {
       // general landing page
       '': 'goToLandingPage',
       // routes inside app
-      'www/main': 'goToMainPage'
+      'main': 'goToMainPage'
     },
 
     goToLandingPage: function() {
@@ -22,10 +22,12 @@ define([
     },
 
     goToMainPage: function() {
+      debugger;
       this.loadView(new MainPageView());
     },
 
     loadView: function(view) {
+      debugger;
       this.view && this.view.close();
       this.view = view;
     }

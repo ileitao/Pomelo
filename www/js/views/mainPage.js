@@ -10,7 +10,7 @@ define([
   // Our overall **MainPageView** is the top-level piece of UI.
   var MainPageView = Backbone.View.extend({
     // attaches `this.el` to an existing element.
-    el: $('.landing-page-container'),
+    el: $('.main-page-container'),
     // Compile our stats template
     template: _.template(mainPage),
     // Delegated events for creating new items, and clearing completed ones.
