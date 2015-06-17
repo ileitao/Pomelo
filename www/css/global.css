@@ -1,10 +1,22 @@
 body {
-  font-family: "Playfair Display";
   font-size: 16px;
   font-style: italic;
   line-height: 1.1em;
   text-transform: lowercase;
   letter-spacing: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  z-index: 8000;
+  background-color:rgba(255,255,255,.9);
 }
 
 .landing-page-content {
@@ -17,18 +29,17 @@ body {
   border-width: 16px;
   border-color: #fff;
   box-sizing: border-box;
-}
-
-.landing-page-content {
   height: auto;
   text-align: center;
+  font-family: "Playfair Display"
+  ;
 }
 
 .landing-page-content .landing-page-lecture {
   margin: 0 auto;
   max-width: 880px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   position: static;
 }
 
@@ -37,27 +48,89 @@ body {
 }
 
 .landing-page-content h1 {
-  font-family: "Playfair Display";
-  font-size: 55px;
+  color: #E08;
+  font-size: 70px;
   line-height: 1.1em;
   text-transform: none;
   letter-spacing: -2px;
   font-weight: 700;
   font-style: normal;
-  color: #E08;
 }
 
 .landing-page-content p {
-  font-family: "Playfair Display";
+  color: #E08;
   font-size: 16px;
   line-height: 1.1em;
   text-transform: lowercase;
-  letter-spacing: 0px;
+  letter-spacing: 14px;
   font-weight: 700;
   font-style: italic;
+}
+.landing-page-content .landing-page-lecture  .landing-page-redirect {
+  margin: 86.5px 0;
+  padding: 6.5px;
+}
+.welcome-btn {
   color: #E08;
+  font-size: 26px;
+  font-style: normal;
+  letter-spacing: 6px;
+  border: 2px solid #E08;
+  padding: 4.25px 14.5px 7.75px 17.5px;
 }
 
-.welcome-btn {
-  text-decoration: none;
+.welcome-btn:hover {
+  background-color: #E08;
+  color: #FFF;
+  transition: background-color .25s ease-out;
+  -webkit-transition: background-color .25s ease-out;
+  -moz-transition: background-color .25s ease-out;
+  -o-transition: background-color .25s ease-out;
+  transition: background-color .25s ease-out;
+}
+
+/* NAVIGATION BAR */
+.main-nav ul {
+  display: block;
+  float: left;
+  font-family: "proxima-nova";
+  font-size: 10px;
+  line-height: 4em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-style: normal;
+  padding: 35px 0 25px 0;
+  margin: 0 0 0 35px;
+  max-width: 49%;
+  transition: padding .25s ease-out;
+  -webkit-transition: padding .25s ease-out;
+  -moz-transition: padding .25s ease-out;
+  -o-transition: padding .25s ease-out;
+  transition: padding .25s ease-out;
+}
+.main-nav ul li {
+  display: inline-block;
+  margin: 0 18px 10px 0;
+  position: relative;
+  zoom: 1;
+}
+
+.main-nav ul li.active-link a {
+  color: #424242;
+  border-color: #424242;
+  -webkit-transition: border 0s ease-out;
+  -moz-transition: border 0s ease-out;
+  -o-transition: border 0s ease-out;
+  transition: border 0s ease-out;
+}
+
+.main-nav ul li a {
+  color: #525252;
+  padding: 0 0 2px 0;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: border .25s ease-out;
+  -moz-transition: border .25s ease-out;
+  -o-transition: border .25s ease-out;
+  transition: border .25s ease-out;
 }
